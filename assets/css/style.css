@@ -48,7 +48,6 @@ ul {
 .header {
     position: fixed;
     width: 100%;
-    background-color: #585585;
 }
 
 .nav {
@@ -67,8 +66,9 @@ ul {
 }
   
 .nav-link {
-    padding: 28px 28px;
+    padding: 12px 12px;
     color: #fff;
+    transition: all 0.5s ease;
 }
   
 .nav-close {
@@ -88,12 +88,29 @@ ul {
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    color: #585585;
+    border-radius: 200px;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.nav-link-active {
+    text-decoration: none;
+    color: #585585;
+    border-radius: 200px;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.nav-link-scrolling {
+    background-color: #585585;
+    transition: background-color .5s ease;
 }
 
 .top-wrapper {
     background-color: black;
-    padding: 180px 0 100px 0;
+    padding: 180px 0 230px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/background.png);
     background-size: cover;
     background-position: center center;
@@ -107,12 +124,43 @@ ul {
     margin-bottom: 10px;
 }
 
+.top-wrapper h2 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+
 .top-wrapper p {
     margin-bottom: 3px;
 }
 
+.wavy-text span {
+    position: relative;
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
 .thumbnail {
     border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+.thumbnail:hover {
+    width: 60%;
+    height: 60%;
+    transition: all 0.5s ease-in-out;
 }
 
 .rundown-wrapper {
