@@ -36,6 +36,7 @@ ul {
     padding: 180px 0 100px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/background.png);
     background-size: cover;
+    background-position: center center;
     color: white;
     text-align: center;
 }
@@ -58,46 +59,11 @@ ul {
     position: fixed;
     width: 100%;
     background-color: rgba(34, 49, 52, 0.9);
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
-
-/* header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-} */
 
 .logo {
     width: 36px;
-    display: inline-flex;
 }
-
-/* .header-left {
-    float: left;
-}
-
-.header-right {
-    float: right;
-    margin-right: -25px;
-}
-
-.header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-}
-
-.header-right a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-} */
 
 .rundown-wrapper {
     padding-bottom: 80px;
@@ -111,10 +77,6 @@ ul {
     padding-top: 80px;
     padding-bottom: 50px;
     color: #5f5d60;
-}
-
-.heading h2 {
-    font-weight: normal;
 }
 
 .rundowns {
@@ -139,10 +101,6 @@ ul {
     color: #b3aeb5;
 }
 
-.heading h3 {
-    font-weight: normal;
-}
-
 footer {
     color: #b3aeb5;
     font-size: 12px;
@@ -156,28 +114,8 @@ footer a {
     color: #b3aeb5;
 }
 
-.menu-icon {
-    font-size: 25px;
-    padding: 10px 1px;
-    float: right;
-    color: white;
-    display: none;
-}
-
-.menu-close {
-    font-size: 25px;
-    padding: 10px 1px;
-    float: right;
-    color: white;
-    display: none;
-}
-
 .thumbnail {
     border: 2px solid black;
-}
-
-.show-menu {
-    top: 0;
 }
 
 .nav {
