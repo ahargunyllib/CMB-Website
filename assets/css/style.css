@@ -58,7 +58,7 @@ ul {
 .header {
     position: fixed;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
+    background-color: #585585;
 }
 
 .logo {
@@ -66,7 +66,7 @@ ul {
 }
 
 .rundown-wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 25px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f7f7f7;
@@ -130,11 +130,11 @@ footer a {
     text-align: right;
     display: flex;
     flex-direction: row;
-    column-gap: 56px;
     padding: 30px;
 }
   
 .nav-link {
+    padding: 28px 28px;
     color: #fff;
 }
   
@@ -152,4 +152,21 @@ footer a {
     display: none;
     font-size: 20px;
     cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.about-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.about-contents {
+    display: inline-block;
+    font-size: 15px;
+    color: #5f5d60;
 }

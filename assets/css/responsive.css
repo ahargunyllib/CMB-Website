@@ -20,7 +20,7 @@
     .top-wrapper h1 {
       font-size: 24px;
       line-height: 36px;
-      text-align: left;
+      text-align: center;
     }
     
     .rundown {
@@ -29,7 +29,7 @@
 
     .nav-menu {
       position: absolute;
-      background-color: #4D98C7;
+      background-color: #585585;
       left: 0;
       top: -500%;
       width: 100%;
@@ -51,5 +51,9 @@
 
     .nav-close, .nav-toggle {
       display: initial;
+    }
+
+    .nav-link {
+      width: 256px;
     }
   }

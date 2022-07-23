@@ -14,3 +14,20 @@ if (navClose){
   })
 }
 
+const navLink = document.querySelectorAll('.nav-link')
+
+function linkAction(){
+  const navMenu = document.getElementById('nav-menu')
+  navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior : "smooth"
+        })
+    })
+})
