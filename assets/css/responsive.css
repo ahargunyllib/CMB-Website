@@ -17,12 +17,32 @@
   
   /* For Smartphones */
   @media all and (max-width: 670px) {
+    .top-wrapper {
+      padding-bottom: 500px;
+    }
+
     .top-wrapper h1 {
       font-size: 24px;
-      line-height: 36px;
-      text-align: center;
     }
-    
+
+    .top-wrapper h2 {
+      font-size: 20px;
+    }
+
+    .top-wrapper p {
+      font-size: 16px;
+    }
+
+    .thumbnail {
+      width: 80%;
+      height: 80%;
+    }
+
+    .thumbnail:hover {
+      width: 90%;
+      height: 90%;
+    }
+
     .rundown {
       width: 100%;
     }

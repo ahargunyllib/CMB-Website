@@ -35,7 +35,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', function () {
   let header = document.querySelector('header')
 
-  header.classList.toggle('nav-link-scrolling', window.scrollY > 800)
+  header.classList.toggle('nav-link-scrolling', window.scrollY > 100)
 })
 
 const text = document.querySelector(".wavy-text")
