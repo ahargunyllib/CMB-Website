@@ -13,6 +13,11 @@
       width: 50%;
       height: 50%;
     }
+
+    .slideshow {
+      width: 640px;
+      height: 360px;
+    }
   }
   
   /* For Smartphones */
@@ -41,6 +46,11 @@
     .thumbnail:hover {
       width: 90%;
       height: 90%;
+    }
+
+    .slideshow {
+      width: 320px;
+      height: 180px;
     }
 
     .rundown {

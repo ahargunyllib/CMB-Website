@@ -199,11 +199,59 @@ ul {
     color: #b3aeb5;
 }
 
+.docs-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fading {
+    0% {
+        background-image: url(../img/2.jpeg);
+    }
+    25% {
+        background-image: url(../img/3.png);
+    }
+    50% {
+        background-image: url(../img/5.jpeg);
+    }
+    75% {
+        background-image: url(../img/6.jpeg);
+    }
+    100% {
+        background-image: url(../img/8.jpeg);
+    }
+}
+
+.slideshow{
+    background-image: url(../img/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 25px;
+    transition: 5s;
+    animation-name: fading;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
 .about-wrapper {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    background-color: #f7f7f7;
 }
 
 .about-contents {
